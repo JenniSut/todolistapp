@@ -1,0 +1,10 @@
+<div [ngClass]="setClasses()">
+<p>
+    <input (change)="onToggle(todo)" type="checkbox">
+    {{ todo.title }}
+    <!--Napin painallus lähettää eventin joka emitataan outputtina ylöspäin 
+    parent-componentille, joka on todos-->
+    <button (click)="onDelete(todo)" class="del">x</button>
+</p>
+</div>
+

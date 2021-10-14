@@ -1,0 +1,40 @@
+<div class="wrapper">
+  <h1>Write your message!</h1>
+
+  <form [formGroup]="messageForm" (ngSubmit)="onContactSubmit()">
+
+      <h5 *ngIf="success">Your message is shown underneath!</h5>
+
+      <label>
+        <h4>Title:</h4>
+        <input type="text" formControlName="name">
+        <div *ngIf="submitted && messageForm.controls.name.errors" class="error">
+          <div *ngIf="messageForm.controls.name.errors.required">A title is required</div>
+          <div *ngIf="messageForm.controls.name.errors.minlength">The Title has to be at least 3 letters long</div>
+        </div>
+        
+            
+
+        
+      </label>
+    
+      <label>
+        <h4>Message:</h4>
+        <textarea formControlName="message"></textarea>
+        <div *ngIf="submitted && messageForm.controls.message.errors" class="error">
+          <div *ngIf="messageForm.controls.message.errors.required">A message is required</div>
+        </div>
+      </label>
+
+      <input type="submit" value="Send message" class="cta">
+    
+    </form>
+
+    <div *ngIf="submitted && success" class="results">
+      <strong>Title:</strong> 
+      <span>{{ messageForm.controls.name.value }}</span>
+
+      <strong>Your Message:</strong> 
+      <span>{{ messageForm.controls.message.value }}</span>
+    </div>
+</div>

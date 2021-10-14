@@ -1,0 +1,84 @@
+label {
+    display: block;
+}
+label input, label textarea {
+    display: block;
+    width: 50%;
+    margin-bottom: 20px;
+    padding: 1em;
+}
+label .error {
+    margin-top: -20px;
+    background: yellow;
+    padding: 0.5em;
+    display: inline-block;
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+.cta {
+    background: linear-gradient(
+        90deg,
+        rgba(255, 0, 0, 1) 0%,
+        rgba(255, 154, 0, 1) 10%,
+        rgba(208, 222, 33, 1) 20%,
+        rgba(79, 220, 74, 1) 30%,
+        rgba(63, 218, 216, 1) 40%,
+        rgba(47, 201, 226, 1) 50%,
+        rgba(28, 127, 238, 1) 60%,
+        rgba(95, 21, 242, 1) 70%,
+        rgba(186, 12, 248, 1) 80%,
+        rgba(251, 7, 217, 1) 90%,
+        rgba(255, 0, 0, 1) 100%
+    );
+    border: none;
+    color: rgb(35, 15, 68);
+    text-transform: uppercase;
+    border-radius: 4px;
+    padding: 1em;
+    cursor: pointer;
+    font-family: 'Montserrat';
+}
+.cta:hover {
+    background: linear-gradient(
+        90deg,
+        rgba(255, 0, 0, 1) 0%,
+        rgba(251, 7, 217, 1) 10%,
+        rgba(186, 12, 248, 1) 20%,
+        rgba(95, 21, 242, 1) 30%,
+        rgba(28, 127, 238, 1) 40%,
+        rgba(47, 201, 226, 1) 50%,
+        rgba(63, 218, 216, 1) 60%,
+        rgba(79, 220, 74, 1) 70%,
+        rgba(208, 222, 33, 1) 80%,
+        rgba(255, 154, 0, 1) 90%,
+        rgba(255, 0, 0, 1) 100%
+    );
+}
+.results {
+    margin-top: 50px;
+    color:rgb(154, 93, 233)
+}
+.results strong {
+    display: block;
+    color: #4393ee
+}
+.results span {
+    margin-bottom: 20px;
+    display: block;
+}
+
+.wrapper {
+    background-color: #333;
+    padding: 30px;
+}
+
+h1 {
+    color: rgb(154, 93, 233)
+}
+h4 {
+    color: #4393ee
+}
+
+h5 {
+    color: #4393ee
+}
